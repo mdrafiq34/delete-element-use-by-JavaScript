@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Edit and delete element </title>
+</head>
+<body>
+    <div>
+        <h1 class="h1"> Create Add, Edit And Delete Element(HTML DOM) <br> Table use by JavaScript</h1>
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>A1</td>
+                        <td>B1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>A3</td>
+                        <td>B3</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>B2</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab tab-2">
+                First Name :<input type="text" name="fname" id="fname">
+                Last Name :<input type="text" name="lname" id="lname">
+                Age :<input type="number" name="age" id="age">
+                
+                <button class="btn" onclick="addHtmlTableRow();">Add</button>
+                <button class="btn" onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button class="btn" onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
